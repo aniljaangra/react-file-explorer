@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
-import { FileExplorer } from "./Explorer";
-import { IDirectoryProps, IFile } from "./Explorer.types";
-import ExplorerContext from "./ExplorerContext";
+import { FileExplorer } from "../Explorer";
+import { IDirectoryProps, IFile } from "../Explorer.types";
+import ExplorerContext from "../ExplorerContext";
 
 export const Directory: React.FC<IDirectoryProps> = ({ file }) => {
   const [selected, setSelected] = useState<boolean>(false);

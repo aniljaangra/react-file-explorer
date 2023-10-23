@@ -1,6 +1,6 @@
-import React, { createContext, memo, useState, useMemo } from "react";
-import { Directory } from "./Directory";
-import { File } from "./File";
+import React, { memo, useState, useMemo } from "react";
+import { Directory } from "./Directory/Directory";
+import { File } from "./File/File";
 import "./Explorer.css";
 import { IFileExplorerProps } from "./Explorer.types";
 import ExplorerContext from "./ExplorerContext";

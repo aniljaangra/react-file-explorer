@@ -1,5 +1,3 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
 import files from "./data/files.json";
 import { Explorer } from "./components/Explorer/Explorer";

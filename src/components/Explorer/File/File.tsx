@@ -1,11 +1,11 @@
-import tsLogo from "../../assets/ts-file-icon.svg";
-import jsLogo from "../../assets/js-file-icon.svg";
-import htmlLogo from "../../assets/html-file-icon.svg";
-import pngLogo from "../../assets/png-file-icon.svg";
-import svgLogo from "../../assets/svg-file-icon.svg";
-import webpLogo from "../../assets/webp-file-icon.svg";
-import otherLogo from "../../assets/other-file-icon.svg";
-import { IFile } from "./Explorer.types";
+import tsLogo from "../../../assets/ts-file-icon.svg";
+import jsLogo from "../../../assets/js-file-icon.svg";
+import htmlLogo from "../../../assets/html-file-icon.svg";
+import pngLogo from "../../../assets/png-file-icon.svg";
+import svgLogo from "../../../assets/svg-file-icon.svg";
+import webpLogo from "../../../assets/webp-file-icon.svg";
+import otherLogo from "../../../assets/other-file-icon.svg";
+import { IFile } from "../Explorer.types";
 import React, { useState } from "react";
 
 const logos = {
@@ -23,7 +23,7 @@ export const FileIcon: React.FC<{ fileType?: string }> = ({ fileType }) => {
       src={logos[fileType as keyof typeof logos] || otherLogo}
       width={20}
       height={20}
-      alt="File Icon"
+      alt={`${fileType} file icon`}
     />
   );
   return <span className="file-icon">{icon}</span>;
